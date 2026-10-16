@@ -12,6 +12,50 @@
 :root{--bg:#f4f6fb;--card:#fff;--ink:#172033;--muted:#697386;--line:#e4e8f0;--accent:#5b5bd6;--accent2:#ececff;--green:#137a55;--greenbg:#e3f7ee;--amber:#946200;--amberbg:#fff4d6;--red:#b42335;--redbg:#ffeaed;--shadow:0 8px 24px #1b2b4b0c}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:13px;padding:12px 14px;font-weight:700}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8b8bff;outline-offset:2px}.app{max-width:760px;margin:auto;padding:16px 14px 36px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 16px}.brand{display:flex;align-items:center;gap:10px}.logo{width:43px;height:43px;border-radius:14px;background:#222445;color:white;display:grid;place-items:center;font-size:22px}.brand h1{font-size:20px;margin:0}.sub{font-size:12px;color:var(--muted)}.pill{background:#e8eaff;color:#3e3ea4;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:800}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;background:#e9edf5;padding:5px;border-radius:15px;margin-bottom:14px}.tab{background:transparent;color:#596174;padding:10px 4px;font-size:13px}.tab.active{background:#fff;color:#292a61;box-shadow:0 2px 6px #15203a12}.panel{display:none}.panel.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:17px;margin-bottom:13px;box-shadow:var(--shadow)}.row{display:flex;align-items:center;gap:9px}.between{justify-content:space-between}.wrap{flex-wrap:wrap}.muted{color:var(--muted)}.small{font-size:12px}.tiny{font-size:11px}.h2{font-size:17px;margin:0 0 12px}.h3{font-size:14px;margin:0 0 8px}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#f7f8fc;border-radius:14px;padding:12px}.stat strong{display:block;font-size:23px;letter-spacing:-.5px}.stat span{font-size:11px;color:var(--muted)}.progress{height:6px;background:#e9edf5;border-radius:99px;overflow:hidden}.progress>div{height:100%;background:#5b5bd6;width:0;transition:width .2s}.field{display:flex;flex-direction:column;gap:5px;margin-bottom:11px;min-width:0;flex:1}.field label{font-size:12px;font-weight:800;color:#586174}.field input,.field select,.field textarea{width:100%;border:1px solid #d9deea;background:white;border-radius:11px;padding:11px;color:var(--ink);min-width:0}.field textarea{min-height:130px;resize:vertical}.primary{background:var(--accent);color:white}.secondary{background:#eef0f7;color:#343a50}.outline{background:white;border:1px solid #d9deea;color:#343a50}.green{background:var(--greenbg);color:var(--green)}.amber{background:var(--amberbg);color:var(--amber)}.red{background:var(--redbg);color:var(--red)}.full{width:100%}.wordstage{text-align:center;padding:26px 12px 18px}.word{font-size:clamp(32px,9vw,48px);font-weight:800;letter-spacing:.01em;overflow-wrap:anywhere;margin:8px 0}.pron{color:var(--muted);font-size:14px}.chip{font-size:11px;border:1px solid var(--line);padding:4px 8px;border-radius:999px;color:#5d6678}.rategrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.rategrid button{padding:14px 5px}.answer{border-top:1px solid var(--line);padding-top:16px;margin-top:14px;text-align:left}.answer h3{font-size:23px;margin:0 0 8px;text-align:center}.detailbox{background:#f7f8fc;border-radius:13px;padding:12px;margin:10px 0;font-size:13px}.detailbox b{display:block;margin-bottom:3px}.hidden{display:none!important}.listitem{padding:11px 0;border-bottom:1px solid var(--line)}.listitem:last-child{border:0}.wordmini{font-size:18px;font-weight:800}.empty{text-align:center;padding:25px 12px;color:var(--muted)}.notice{background:#f0f2ff;border:1px solid #dedfff;padding:12px;border-radius:13px;font-size:12px;color:#44457c}.dangertext{color:var(--red)}.chartbars{display:flex;align-items:end;gap:7px;height:100px;padding:8px 0}.barwrap{flex:1;text-align:center;font-size:10px;color:var(--muted)}.bar{background:#7474df;border-radius:6px 6px 2px 2px;min-height:3px;width:100%;margin-bottom:5px}.footer{text-align:center;color:var(--muted);font-size:11px;padding:12px}.settingsgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:420px){.app{padding:12px 10px 28px}.card{padding:14px}.tab{font-size:12px}.stat strong{font-size:20px}.settingsgrid{grid-template-columns:1fr}.rategrid button{font-size:13px}}
 .ai-preview-list{display:grid;gap:8px;margin-top:10px}.ai-preview-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--line,#ddd);border-radius:10px;background:var(--card,#fff)}.ai-preview-item input{margin-top:4px;flex:0 0 auto}.ai-preview-item .word-detail{min-width:0;flex:1}.ai-preview-item .word-detail strong{display:block;font-size:1rem}.ai-preview-item .word-detail small{display:block;color:var(--muted,#666);margin-top:3px;line-height:1.5}.preview-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+
+/* Compact, no-scroll learning mode on phones */
+.study-settings summary{display:flex;align-items:center;justify-content:space-between;gap:8px;font-weight:800;cursor:pointer;list-style:none}
+.study-settings summary::-webkit-details-marker{display:none}
+.study-settings summary:after{content:"＋";font-size:18px;color:var(--accent)}
+.study-settings[open] summary:after{content:"−"}
+.study-settings-content{padding-top:12px}
+@media(max-width:600px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .app{padding:8px 10px calc(84px + env(safe-area-inset-bottom));}
+  .top{margin:2px 0 8px}
+  .logo{width:35px;height:35px;font-size:18px;border-radius:11px}
+  .brand h1{font-size:18px}
+  .sub{font-size:10px}
+  .pill{font-size:10px;padding:4px 7px}
+  .tabs{position:fixed;z-index:50;left:0;right:0;bottom:0;margin:0;padding:7px 8px calc(7px + env(safe-area-inset-bottom));border-radius:16px 16px 0 0;background:rgba(239,242,249,.97);box-shadow:0 -4px 18px #15203a18;backdrop-filter:blur(12px);gap:5px}
+  .tab{padding:9px 3px;font-size:12px;min-height:42px}
+  #panel-study>.card:first-child{display:none}
+  .study-settings-card{padding:10px 13px;margin-bottom:8px}
+  .study-settings:not([open]) .study-settings-content{display:none}
+  #studyCard{padding:12px;margin-bottom:8px}
+  .wordstage{padding:10px 6px 8px}
+  .word{font-size:clamp(34px,10vw,46px);margin:4px 0}
+  .pron{font-size:12px}
+  #studyHint{margin:5px 0;font-size:11px}
+  .answer{padding-top:8px;margin-top:8px}
+  .answer h3{font-size:20px;margin-bottom:5px}
+  .answer .detailbox{padding:8px;margin:6px 0;font-size:12px;line-height:1.35}
+  .rategrid{gap:6px;margin-top:8px}
+  .rategrid button{padding:11px 3px;font-size:13px}
+  #navGrid{gap:6px;margin-top:8px!important}
+  #navGrid button{padding:10px 4px;font-size:13px}
+  #rateHint{font-size:10px;margin-top:5px!important}
+  #deepExplanation{max-height:24vh;overflow:auto}
+  .footer{display:none}
+  .panel:not(#panel-study).active{padding-bottom:12px}
+}
+@media(max-height:740px) and (max-width:600px){
+  #studyCard .wordstage{padding-top:5px;padding-bottom:4px}
+  #studyCard .word{font-size:clamp(30px,8vw,40px)}
+  #studyCard .answer .detailbox{font-size:11px;padding:6px;margin:4px 0}
+  #studyCard .rategrid button,#navGrid button{padding:9px 3px}
+}
+
 </style>
 </head>
 <body>
@@ -38,8 +82,10 @@
     <div class="row between small muted"><span>今日の目標</span><span id="goalText">20語</span></div>
     <div class="progress" style="margin-top:7px"><div id="goalBar"></div></div>
   </div>
-  <div class="card">
-    <div class="row between wrap"><h2 class="h2" style="margin:0">学習セット</h2><span class="chip" id="queueLabel">通常学習</span></div>
+  <div class="card study-settings-card">
+    <details class="study-settings">
+      <summary>学習設定 <span class="chip" id="queueLabel">通常学習</span></summary>
+      <div class="study-settings-content">
     <div class="settingsgrid" style="margin-top:12px">
       <div class="field"><label for="langFilter">言語</label><select id="langFilter"><option value="ko">韓国語</option><option value="en">英語</option><option value="zh">中国語</option><option value="all">全言語</option></select></div>
       <div class="field"><label for="topicFilter">テーマ</label><select id="topicFilter"><option value="all">すべて</option><option>家族</option><option>感情・心理</option><option>日常生活</option><option>時間</option><option>数字</option><option>人間関係</option><option>住まい</option><option>学校・学習</option><option>仕事</option><option>買い物</option><option>食事</option><option>自然・天気</option><option>旅行</option><option>位置</option><option>基本表現</option><option>感覚・評価</option><option>健康</option><option>運動・スポーツ</option><option>移動</option><option>会話</option><option>頻度</option><option>考え・議論</option><option>社会</option></select></div>
@@ -50,6 +96,8 @@
     </div>
     <div class="row between small muted"><span id="setDescription">韓国語 · すべて</span><span id="position">0 / 0</span></div>
     <div class="progress" style="margin-top:7px"><div id="setBar"></div></div>
+      </div>
+    </details>
   </div>
   <div class="card" id="studyCard">
     <div class="row between wrap"><span class="chip" id="wordMeta">名詞 · 家族</span><span class="small muted" id="wordIndex"></span></div>
